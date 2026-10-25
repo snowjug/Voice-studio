@@ -1,159 +1,246 @@
-<div align="center">
-  <img src="docs/logo.png" alt="VoiceStudio" width="88" />
-  <h1>VoiceStudio</h1>
+﻿<div align="center">
+  <img src="docs/logo.png" alt="VoiceStudio" width="100" />
+  <h1>🎙️ VoiceStudio</h1>
+  <p><strong>Open-source, local-first voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages.</strong></p>
   <p>
-    <a href="https://trendshift.io/repositories/28176?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-28176" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/28176" alt="VoiceStudio ranking on Trendshift" width="220" height="48" /></a>
-  </p>
-  <p><strong>Open-source voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.</strong></p>
-  <p>
-    <a href="https://voicestudio.sh/?utm_source=github&utm_medium=readme&utm_campaign=project">Website</a> ·
-    <a href="https://github.com/debpalash/VoiceStudio/releases/latest">Download</a> ·
-    <a href="#get-started">Get started</a> ·
-    <a href="#documentation">Docs</a> ·
-    <a href="https://discord.gg/bzQavDfVV9">Discord</a> ·
-    <a href="docs/readme/README_CN.md">简体中文</a> ·
-    <a href="docs/readme/README_JA.md">日本語</a>
+    <img src="https://img.shields.io/badge/version-0.5.7--beta.2-blueviolet?style=flat-square" alt="Version" />
+    <img src="https://img.shields.io/badge/license-AGPL--3.0-blue?style=flat-square" alt="AGPL-3.0" />
+    <img src="https://img.shields.io/badge/languages-646-green?style=flat-square" alt="Languages" />
+    <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform" />
+    <img src="https://img.shields.io/badge/Python-3.11%2B-yellow?style=flat-square" alt="Python" />
+    <img src="https://img.shields.io/badge/Node.js-22%2B-brightgreen?style=flat-square" alt="Node.js" />
   </p>
   <p>
-    <a href="https://github.com/debpalash/VoiceStudio/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/debpalash/VoiceStudio/ci.yml?branch=main" alt="CI" /></a>
-    <a href="https://github.com/debpalash/VoiceStudio/releases/latest"><img src="https://img.shields.io/github/v/release/debpalash/VoiceStudio" alt="Latest release" /></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue" alt="AGPL-3.0" /></a>
-    <a href="https://supermetry.com"><img src="https://app.supermetry.com/px/zfjiv7psp4ed.svg?c=VoiceStudio&style=stats" alt="views" /></a>
+    <a href="https://voicestudio.sh">Website</a> ·
+    <a href="https://github.com/snowjug/Voice-studio/releases/latest">Download</a> ·
+    <a href="#-get-started">Get Started</a> ·
+    <a href="#-documentation">Docs</a> ·
+    <a href="https://discord.gg/bzQavDfVV9">Discord</a>
   </p>
 </div>
 
-![A tour of the Electron app: voice cloning, voice design, dubbing, and model management](docs/media/electron/voicestudio.gif)
+---
 
-## Your voice. Your workflow.
+> **VoiceStudio** is a privacy-first, cross-platform desktop application that puts professional-grade voice AI directly on your hardware — no cloud required. Clone voices, dub videos, design new voices, transcribe audio, and produce audiobooks — all locally.
 
-| Create | Produce | Connect |
+---
+
+## ✨ Features
+
+| 🎤 Create | 🎬 Produce | 🔌 Connect |
 | :--- | :--- | :--- |
-| Clone a voice or design your own | Dub videos with timed speech | Local API & MCP for agents |
-| Dictate with a floating widget | Stories, audiobooks & batch jobs | Reusable recipes & watch folders |
+| Clone any voice with a short sample | Dub videos with timed speech in 646 languages | Local REST API for agent integration |
+| Design voices from a text description | Generate stories, audiobooks & batch jobs | MCP (Model Context Protocol) server |
+| Real-time dictation with floating widget | Watch folders for automated pipelines | Reusable recipes for repeated workflows |
 
-Start with **VoiceStudio** (default, powered by k2-fsa/OmniVoice), or choose another engine. [Features & engine catalog](docs/feature-catalog.md).
+### 🚀 Highlights
 
-Local workflows run on your hardware. Remote services are optional; usage analytics requires consent.
+- **646 languages** — Multilingual TTS powered by OmniVoice and a pluggable engine catalog
+- **Zero-shot voice cloning** — Clone any voice from a short, clean reference audio clip
+- **Video dubbing** — Auto-align dubbed speech to video timing
+- **Audiobook production** — Multi-chapter, multi-voice narration with batch processing
+- **Local API & MCP** — Integrate with AI agents, Cursor, Claude Code, and more
+- **Privacy first** — All processing runs on your hardware; remote services are optional
+- **Cross-platform** — macOS (Apple Silicon + Intel UI), Windows, Linux, Docker
+
+---
+
+## 🖥️ Screenshots
 
 <details>
-<summary><strong>Explore the workspaces</strong> · Clone, dub, design & models</summary>
+<summary><strong>📸 Explore the workspaces</strong> · Clone, dub, design & models</summary>
 
 <table>
   <tr>
-    <td><img src="docs/media/electron/voice-cloning.png" alt="Electron voice cloning workspace with the bundled demo voice" width="100%" /></td>
-    <td><img src="docs/media/electron/dubbing.png" alt="Electron video dubbing workspace" width="100%" /></td>
+    <td><img src="docs/media/electron/voice-cloning.png" alt="Voice cloning workspace" width="100%" /></td>
+    <td><img src="docs/media/electron/dubbing.png" alt="Video dubbing workspace" width="100%" /></td>
   </tr>
   <tr><td align="center">Voice cloning</td><td align="center">Video dubbing</td></tr>
   <tr>
-    <td><img src="docs/media/electron/voice-design.png" alt="Describe a voice in the Electron voice design workspace" width="100%" /></td>
-    <td><img src="docs/media/electron/models.png" alt="Install and manage local speech models" width="100%" /></td>
+    <td><img src="docs/media/electron/voice-design.png" alt="Voice design workspace" width="100%" /></td>
+    <td><img src="docs/media/electron/models.png" alt="Model manager" width="100%" /></td>
   </tr>
-  <tr><td align="center">Voice design</td><td align="center">Local models</td></tr>
+  <tr><td align="center">Voice design</td><td align="center">Local model manager</td></tr>
 </table>
 
 <img width="2628" height="1950" alt="VoiceStudio desktop workspace" src="https://github.com/user-attachments/assets/b474497d-a453-49a3-a2dd-f023ec6b7659" />
 
 </details>
 
-## Get started
+---
 
-### One-command install (macOS / Linux)
+## 🛠️ Tech Stack
 
-```sh
-# Latest Electron release
-curl -fsSL https://voicestudio.sh/install | sh
+| Layer | Technology |
+|---|---|
+| **Desktop Shell** | [Electron](https://www.electronjs.org/) (v22+) |
+| **Frontend** | TypeScript, React, Vite |
+| **Backend / AI** | Python 3.11+, PyTorch, Transformers |
+| **Speech Engine** | OmniVoice (default) + pluggable engine catalog |
+| **Package Manager** | [Bun](https://bun.sh/) 1.4+ |
+| **Monorepo** | Turborepo |
+| **Database** | SQLite via Alembic migrations |
+| **GPU Acceleration** | CUDA (NVIDIA), Metal/MPS (Apple Silicon) |
+| **Protocol** | Local REST API + MCP server |
 
-# A specific published Electron release (replace X.Y.Z)
-curl -fsSL https://voicestudio.sh/install | sh -s -- --version X.Y.Z
+---
 
-# Build current main and install the desktop app
-curl -fsSL https://voicestudio.sh/install | sh -s -- --main
-
-# Uninstall the app, keeping your data
-curl -fsSL https://voicestudio.sh/install | sh -s -- --uninstall
-```
-
-On Windows, run `irm https://voicestudio.sh/install | iex` in PowerShell.
-
-If `voicestudio.sh/install` is unreachable or returns 404, run the same script
-straight from the repository, or clone it and run `scripts/install.sh`:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/debpalash/VoiceStudio/main/scripts/install.sh | sh
-```
-
-Release downloads require curl and a SHA-256 tool. `--main` requires Git,
-Node.js 22+, Bun, Rust/Cargo, and platform build tools; see
-[installer prerequisites and behavior](docs/install/script.md).
-The installer preserves your settings, projects, and models. Older versions
-must contain Electron packages; it never falls back to archived Tauri builds.
-
-Or download from [Releases](https://github.com/debpalash/VoiceStudio/releases/latest) (macOS `.dmg`, Windows `.exe`, Linux `.AppImage` or `.deb`) and follow your platform guide:
-
-**[macOS](docs/install/macos.md) · [Windows](docs/install/windows.md) · [Linux](docs/install/linux.md) · [Docker](docs/install/docker.md)**
+## 💻 Hardware Requirements
 
 | Hardware | Support |
 |---|---|
-| NVIDIA GPU (Windows / Linux) | CUDA acceleration |
-| Apple Silicon | Metal (MPS) acceleration |
-| No dedicated GPU (Intel/AMD integrated graphics, older PCs) | Fully usable on the CPU, slower; setup installs the small CPU build of PyTorch (about 5 GB free disk) |
-| Windows on ARM (Snapdragon X etc.) | **Experimental**, validation pending: native ARM64 app, x64 Python backend under emulation, CPU only |
-| Intel Mac | App UI only; connect to a remote backend ([why](docs/install/macos.md)) |
+| NVIDIA GPU (Windows / Linux) | ✅ Full — CUDA acceleration |
+| Apple Silicon (M1/M2/M3/M4) | ✅ Full — Metal (MPS) acceleration |
+| CPU only (Intel/AMD integrated) | ✅ Usable — slower; ~5 GB free disk for CPU PyTorch |
+| Windows on ARM (Snapdragon X) | ⚠️ Experimental — native ARM64 app, x64 Python under emulation, CPU only |
+| Intel Mac | ℹ️ App UI only — connect to a remote backend |
 
-Open **Voice cloning**, choose a voice or add a clean reference recording, enter your text, and generate. Install the required model when prompted. Hardware needs vary by engine; see [performance](docs/performance.md).
+---
 
-### Install with prompt
+## 🚀 Get Started
 
-Paste into your coding agent (Claude Code, Codex, Cursor, …):
+### One-command install
 
-```text
-Install the VoiceStudio Electron app on this device and verify it works, following
-https://github.com/debpalash/VoiceStudio/blob/main/docs/install/agent.md
+**macOS / Linux:**
+```sh
+# Install latest Electron release
+curl -fsSL https://voicestudio.sh/install | sh
+
+# Install a specific version (replace X.Y.Z)
+curl -fsSL https://voicestudio.sh/install | sh -s -- --version X.Y.Z
+
+# Build from main branch and install
+curl -fsSL https://voicestudio.sh/install | sh -s -- --main
+
+# Uninstall (keeps your data)
+curl -fsSL https://voicestudio.sh/install | sh -s -- --uninstall
 ```
 
-The [agent guide](docs/install/agent.md) covers hardware detection, reusing existing
-data, asking before model downloads, and a test generation. Agents that support skills
-can also run `npx skills add debpalash/VoiceStudio`.
+**Windows (PowerShell):**
+```powershell
+irm https://voicestudio.sh/install | iex
+```
 
-<details>
-<summary><strong>Run the Electron preview from source</strong></summary>
+### Download a release
+
+Get the latest from [Releases](https://github.com/snowjug/Voice-studio/releases/latest):
+
+- 🍎 macOS — .dmg
+- 🪟 Windows — .exe
+- 🐧 Linux — .AppImage or .deb
+
+Platform guides: **[macOS](docs/install/macos.md) · [Windows](docs/install/windows.md) · [Linux](docs/install/linux.md) · [Docker](docs/install/docker.md)**
+
+### Build from source
+
+**Prerequisites:** Git, Node.js 22+, [Bun](https://bun.sh/), Python 3.11+, Rust/Cargo
 
 ```bash
-git clone https://github.com/debpalash/VoiceStudio.git
-cd VoiceStudio
+# 1. Clone the repository
+git clone https://github.com/snowjug/Voice-studio.git
+cd Voice-studio
+
+# 2. Install JavaScript dependencies
 bun install
-bun run setup:api  # prepare Python dependencies before starting Electron
+
+# 3. Set up Python backend (creates venv, installs PyTorch + deps)
+bun run setup:api
+
+# 4. Launch the desktop app in development mode
 bun run dev
 ```
 
-See [Electron setup](electron/README.md) for prerequisites and backend configuration.
+Use un run smoke-test to build and launch an isolated packaged Electron app.
 
-Use `bun run smoke-test` to build and launch an isolated packaged Electron app.
-Add `-- --install` for the networked managed-runtime installation check.
+> ⚠️ **Note:** Electron is the only desktop app and web UI. Version 0.5.3 was the final Tauri release.
 
-</details>
+---
 
-> **Electron is the only desktop app and web UI.** Version 0.5.3 was the final Tauri release. Existing Tauri users must [install Electron separately](docs/electron-migration.md). The retired Tauri shell and legacy UI entry points have been removed.
+## 📁 Project Structure
 
-## Documentation
+```
+Voice-studio/
+├── electron/          # Electron desktop shell (TypeScript/React frontend)
+├── backend/           # Python AI backend (FastAPI + PyTorch)
+├── omnivoice/         # Bundled OmniVoice TTS engine
+├── omnivoice-gallery/ # Voice gallery assets
+├── frontend/          # Shared web frontend components
+├── mobile/            # iOS & Android preview apps
+├── native/            # Native platform integrations
+├── scripts/           # Build, install & utility scripts
+├── config/            # App configuration
+├── deploy/            # Deployment configs (Docker, etc.)
+├── docs/              # Full documentation
+├── examples/          # API usage examples
+├── tests/             # Test suites
+└── notebooks/         # Jupyter notebooks for model experimentation
+```
 
-| Need | Start here |
+---
+
+## 📖 Documentation
+
+| Topic | Link |
 |---|---|
-| Setup help | [Troubleshooting](docs/install/troubleshooting.md) · [Model downloads](docs/downloading-models.md) |
-| Models & audio quality | [Engine guides](docs/engines/README.md) · [Benchmarks](docs/benchmarks.md) |
-| Integrations | [Local API](docs/speech-platform.md) · [MCP](docs/mcp.md) · [Examples](examples/README.md) |
-| Phone apps (preview, run offline) | [iOS and Android](docs/mobile.md) |
-| Development | [Contributing](.github/CONTRIBUTING.md) ([CLA signing guidance](.github/CONTRIBUTING.md#contribution-licensing) for your first PR) · [Electron](electron/README.md) · [Changelog](CHANGELOG.md) |
+| Setup & troubleshooting | [Troubleshooting](docs/install/troubleshooting.md) · [Model downloads](docs/downloading-models.md) |
+| Speech engines & quality | [Engine guides](docs/engines/README.md) · [Benchmarks](docs/benchmarks.md) |
+| Integrations & API | [Local API](docs/speech-platform.md) · [MCP](docs/mcp.md) · [Examples](examples/README.md) |
+| Mobile apps (offline) | [iOS & Android](docs/mobile.md) |
+| Development | [Contributing](.github/CONTRIBUTING.md) · [Electron setup](electron/README.md) · [Changelog](CHANGELOG.md) |
 
-Agent skills: `npx skills add debpalash/VoiceStudio` — choose **voicestudio** for audio workflows or **voicestudio-maintainer** for repository maintenance.
+---
 
-## Sponsors
+## 🔌 API & MCP Integration
 
-Sponsorship funds maintainer time, development tools, release infrastructure and test hardware; it buys recognition, not features.
+VoiceStudio exposes a local REST API and MCP server for AI agents and automation:
 
-[GitHub Sponsors](https://github.com/sponsors/debpalash) · [Ko-fi](https://ko-fi.com/debpalash) · [PayPal](https://paypal.me/palashCoder) · [Tiers and recognition](SPONSORS.md) · [Ask for recognition](https://github.com/debpalash/VoiceStudio/issues/new?template=sponsor.yml)
+```python
+import requests
 
-## License & responsible use
+# Generate speech via local API
+response = requests.post("http://localhost:8000/tts", json={
+    "text": "Hello, this is VoiceStudio speaking!",
+    "voice_id": "my-cloned-voice",
+    "language": "en"
+})
 
-[AGPL-3.0](LICENSE) covers the application, including commercial use under its conditions. Model weights, tokenizers, voices and generated-output conditions are separate; a paid app licence does not grant those rights. Clone voices only with permission. Model Manager now shows versioned model-source notices, evidence links and unresolved review gaps from the [shared inventory](docs/licensing/model-inventory.md). Its optional [reviewed-file preview](docs/licensing/model-review-workflow.md) does not enforce ordinary downloads or certify commercial permission. See [license details](LICENSE-NOTICE.md).
+with open("output.wav", "wb") as f:
+    f.write(response.content)
+```
 
+See [Local API docs](docs/speech-platform.md) and [MCP integration](docs/mcp.md).
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Read the [Contributing Guide](.github/CONTRIBUTING.md) before submitting a PR.
+
+```bash
+bun run test       # Run tests
+bun run typecheck  # Type-check
+bun run lint       # Lint
+bun run format     # Format code
+```
+
+---
+
+## 💖 Sponsors
+
+[GitHub Sponsors](https://github.com/sponsors/debpalash) · [Ko-fi](https://ko-fi.com/debpalash) · [PayPal](https://paypal.me/palashCoder) · [Tiers & recognition](SPONSORS.md)
+
+---
+
+## 📄 License & Responsible Use
+
+Licensed under **[AGPL-3.0](LICENSE)**.
+
+> ⚠️ **Ethical use:** Clone voices **only with explicit permission** from the voice owner.
+
+A commercial licence without AGPL obligations is available — contact **hi@voicestudio.sh**.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by the VoiceStudio community · <a href="https://voicestudio.sh">voicestudio.sh</a></sub>
+</div>
